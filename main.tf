@@ -32,6 +32,11 @@ resource "google_compute_firewall" "fw" {
   }
 
   allow {
+    protocol = "tcp"
+    ports    = ["80"]
+  }
+
+  allow {
       protocol  = "icmp"
   } 
 
