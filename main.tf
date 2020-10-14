@@ -23,7 +23,7 @@ resource "google_compute_instance" "instance" {
 }
 
 resource "google_compute_firewall" "fw" {
-  name    = "allow-ssh"
+  name    = "allow-ssh-${var.name}"
   network = var.vpc
 
   allow {
