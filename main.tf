@@ -14,7 +14,7 @@ resource "google_compute_instance" "instance" {
     subnetwork = var.subnet
   }
 
-    metadata_startup_script = "sudo apt-get update && sudo apt-get install apache2 -y && echo '<!doctype html><html><body><h1>This is a test VM brought to you by Aviatrix!</h1></body></html>' | sudo tee /var/www/html/index.html"
+    metadata_startup_script = "sudo apt-get update && sudo apt-get install iperf -y"
 
     tags = ["allow-ssh"]
     metadata = {

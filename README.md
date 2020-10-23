@@ -19,8 +19,8 @@ The following variables are required:
 
 key | value
 :--- | :---
-name | Azure resource name
-region | Azure region
+name | GCP resource name
+region | GCP region
 vpc | VPC name
 subnet | Subnet name where VM should be attached
 ssh_key | Public key to be used
