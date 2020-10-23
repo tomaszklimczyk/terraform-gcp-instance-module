@@ -8,6 +8,7 @@ module "srv1" {
   
   name    = "frey"
   region  = "europe-west3"
+  zone    = "a"
   vpc     = "my-vpc"
   subnet  = "frey-subnet"
   ssh_key = var.ssh_key
