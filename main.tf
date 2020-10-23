@@ -1,7 +1,7 @@
 resource "google_compute_instance" "instance" {
   name         = "${var.name}-srv"
   machine_type = var.instance_size
-  zone         = "${var.region}-b"
+  zone         = "${var.region}-${var.zone}"
 
   boot_disk {
     initialize_params {

@@ -1,24 +1,14 @@
-variable "name" {
-  type = string
-}
+## Required Vars ##
+variable "name" { }
+variable "region" { }
+variable "vpc" { }
+variable "subnet" { }
+variable "ssh_key" { }
 
-variable "region" {
-  type = string
-}
-
-variable "vpc" {
-  type = string
-}
-
-variable "subnet" {
-  type = string
-}
-
-variable "ssh_key" {
-  type = string
-}
-
+## Optional Vars ##
 variable "instance_size" {
-  type    = string
   default = "f1-micro"
+}
+variable "zone" {
+  default = "b"
 }

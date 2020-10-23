@@ -30,6 +30,7 @@ The following variables are optional:
 key | default | value 
 :---|:---|:---
 instance_size | f1-micro | The size of the GCP VM instance
+zone | b | Availability Zone to deploy the instance in
 
 ### Outputs
 This module will return the following outputs:
