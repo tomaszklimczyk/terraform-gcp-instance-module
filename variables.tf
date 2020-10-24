@@ -7,7 +7,7 @@ variable "ssh_key" { }
 
 ## Optional Vars ##
 variable "instance_size" {
-  default = "f1-micro"
+  default = "n1-standard-2"
 }
 variable "zone" {
   default = "b"
