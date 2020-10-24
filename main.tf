@@ -37,11 +37,19 @@ resource "google_compute_firewall" "fw" {
   }
   allow {
     protocol = "tcp"
-    ports    = ["5001,5201"]
+    ports    = ["5001"]
+  }
+  allow {
+    protocol = "tcp"
+    ports    = ["5201"]
   }
   allow {
     protocol = "udp"
-    ports    = ["5001,5201"]
+    ports    = ["5001"]
+  }
+   allow {
+    protocol = "udp"
+    ports    = ["5201"]
   }
   allow {
       protocol  = "icmp"
